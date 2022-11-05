@@ -1,6 +1,54 @@
-.RpreloadImg{
-  height: 100px;
+@font-face {
+  font-family: Helvetica_Bold;
+  src: url("./Helvetica-Neue-Bold_22498.ttf");
 }
+
+@font-face {
+  font-family: Proxima_Bold;
+  font-weight: 600;
+  src: url("./FontsFree-Net-Proxima-Nova-Bold.otf");
+}
+
+@font-face {
+  font-family: Helvetica_Medium;
+  src: url("./HelveticaNeue-Medium.otf");
+}
+
+@font-face {
+  font-family: Proxima;
+  font-weight: 900;
+  src: url("./Proxima\ Nova\ Font.otf");
+}
+
+
+.Rpreload {
+  background-color: black;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: var(--divWidth);
+  z-index: 10000;
+}
+
+.RpreloadImg {
+  /* transform: rotate(0deg); */
+  transform-origin: 57.73502691896258% 50%;
+  width: 10vw;
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .Rnavbar {
   transition: top 0.3s;
   width: 100%;
@@ -369,7 +417,7 @@ Animations
   #toggle:checked+.hamburger .meat {
     width: 0;
     /* transform: rotate(45deg);
-    margin-top: -7px; */
+    margin-Proxima_Boldtop: -7px; */
   }
   
   #toggle:checked+.hamburger+.nav {
