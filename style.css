@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Proxima";
 }
 
 body {
@@ -190,8 +191,13 @@ h1{
     border: 2px solid white;
 } */
 
-.core1 h1 {
+.core1 h1{
     font-size: 1.6rem;
+    text-align: center;
+}
+
+.core1 p, .core2 p{
+    font-size: 1.15rem;
     text-align: center;
 }
 
